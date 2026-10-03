@@ -1,0 +1,628 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f7fbfc;
+    color:#222;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.Navbar{
+
+    position:sticky;
+    top:0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    width:100%;
+
+    height:75px;
+
+    padding:0 50px;
+
+    background:white;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+
+    z-index:1000;
+
+}
+
+/* Logo */
+
+.logo{
+
+    flex:1;
+
+    font-size:32px;
+
+    font-weight:700;
+
+}
+
+/* Center */
+
+
+.nav-center{
+
+    flex:2;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+}
+
+.nav-center a{
+
+    transition:.3s;
+
+}
+
+.nav-center a:hover{
+
+    color:#0D6EFD;
+
+}
+
+.nav-select{
+    border:none;
+    background:transparent;
+    font-size:16px;
+    font-weight:500;
+    cursor:pointer;
+    appearance:none;
+    -webkit-appearance:none;
+    padding-right:20px;
+}
+
+.home{
+    color: #0056d6;
+}
+
+/* Right */
+
+.nav-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.NavButton2{
+
+    background:none;
+
+    font-size:22px;
+
+}
+
+.NavButton3{
+
+    padding:13px 28px;
+
+    border-radius:30px;
+
+    background:#0D6EFD;
+
+    color:white;
+
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.Container{
+    
+    height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background-image:url("water_Splash.png");
+
+    background-size: cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    position:relative;
+}
+
+/* Light overlay */
+
+.Container::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        to right,
+        rgba(248,251,255,.92) 0%,
+        rgba(248,251,255,.78) 35%,
+        rgba(248,251,255,.15) 70%,
+        rgba(248,251,255,0) 100%
+    );
+
+}
+
+.Text{
+
+    position:relative;
+
+    z-index:2;
+
+    width:45%;
+
+    margin-left:50px;
+}
+
+/* Badge */
+
+.ed{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    margin-bottom:25px;
+
+    background:#EAF6FF;
+
+    color:#0D6EFD;
+
+    border-radius:40px;
+
+    font-weight:600;
+}
+
+/* Heading */
+
+.Text h1{
+
+    font-size:64px;
+
+    line-height:1.15;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+}
+
+/* Paragraph */
+
+.Text p{
+
+    font-size:18px;
+
+    color:#555;
+
+    line-height:1.7;
+}
+
+/* Buttons */
+
+.sn{
+
+    width:200px;
+
+    height:48px;
+
+    margin-top:45px;
+
+    margin-right:20px;
+
+    border-radius:30px;
+
+    font-size:18px;
+
+    transition:.3s ease;
+}
+
+/* Primary */
+
+.sn1{
+
+    background:#0D6EFD;
+
+    color:#fff;
+}
+
+.sn:hover{
+
+    background:#0056d6;
+
+    transform:translateY(-3px);
+}
+
+/* Secondary */
+
+.sn2{
+
+    background:#fff;
+
+    color:#0D6EFD;
+
+    border:2px solid #0D6EFD;
+}
+
+.sn2:hover{
+
+    background:#0D6EFD;
+
+    color:#fff;
+}
+
+/* main2 */
+.categorie{
+    margin-left: 10px;
+    height: 280px;
+    display: flex;
+    gap: 20px;
+}
+.title{
+    font-size:32px;
+    font-weight:500;
+}
+.box{
+    width:235px;
+    height:220px;
+    border-radius:20px;
+    background-size:cover;
+    background-position:center;
+    justify-content: center;
+    transition:.3s ease;
+    cursor:pointer;
+    border-radius: 10px;
+}
+.box1{
+    background-image: url("Water_bottles.jpg");
+}
+
+.box2{
+    background-image: url("WaterJar.webp");
+}
+
+.box3{
+    background-image: url("Soft_drinks.avif");
+}
+
+.box4{
+    background-image: url("juices.jpeg");
+}
+
+.box5{
+    background-image: url("Party_packs.avif");
+}
+
+.box6{
+    background-image: url("Accessories.jpg");
+}
+.sub-title{
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+}
+
+.title2{
+    font-size:32px;
+    font-weight:500;
+}
+
+.l20{
+    background-image: url("20L.jpeg");
+}
+
+.l10{
+    background-image: url("10L.jpeg");
+}
+
+.sprite{
+    background-image: url("sprite.jpeg");
+}
+
+.coke{
+    background-image: url("Coke.jpeg");
+}
+
+.sting{
+    background-image: url("sting.jpeg");
+}
+
+.fanta{
+    background-image: url("Fanta.webp");
+}
+
+.ATC{
+    background:#0D6EFD;
+    color:white;
+    border-radius: 10px;
+    height: 35px;
+    width: 120px;
+}
+
+.item-title{
+    font-size: 15px;
+    text-align: center;
+    margin-left: 5px;
+    display: block;
+}
+
+
+/* ----------- */
+.offer{
+    background-image: url("Offer.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin:80px 50px;
+    padding:50px;
+    border-radius:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+}
+
+.offer-text{
+    width:50%;
+}
+
+.offer-text h2{
+    font-size:45px;
+    margin-bottom:20px;
+
+}
+
+.offer-text p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.offer-btn{
+    margin-top:30px;
+    padding:15px 35px;
+    background:white;
+    color:#0D6EFD;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:600;
+}
+
+.offer-image img{
+    width:350px;
+}
+
+/* ______________ */
+.why-us{
+    padding:80px 50px;
+    text-align:center;
+}
+
+.why-us h2{
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.feature-card{
+    background:white;
+    padding:35px 25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
+
+.feature-card i{
+    font-size:45px;
+    color:#0D6EFD;
+    margin-bottom:20px;
+}
+
+.feature-card h3{
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.feature-card p{
+    color:#666;
+    line-height:1.6;
+}
+
+
+/* ===========================
+      HOW IT WORKS
+=========================== */
+
+.how-it-works{
+    padding:80px 50px;
+    background:#f7fbfc;
+}
+
+.works-title{
+    text-align:center;
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:60px;
+}
+
+.works-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.work-card{
+    background:white;
+    border-radius:20px;
+    padding:40px 25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s ease;
+}
+
+.work-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.work-card i{
+    font-size:55px;
+    color:#0D6EFD;
+    margin-bottom:25px;
+}
+
+.work-card h3{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.work-card p{
+    color:#666;
+    line-height:1.7;
+    font-size:16px;
+}
+
+/* ===========================
+          FOOTER
+=========================== */
+
+.footer{
+    background:#0B1F3A;
+    color:white;
+    margin-top:80px;
+    padding:60px 50px 20px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1.5fr;
+    gap:40px;
+}
+
+.footer-box h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.footer-box h3{
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.footer-box p{
+    color:#d7d7d7;
+    line-height:1.8;
+    margin-bottom:12px;
+}
+
+.footer-box a{
+
+    display:block;
+    color:#d7d7d7;
+    margin-bottom:12px;
+    transition:.3s;
+}
+
+.footer-box a:hover{
+    color:#4DA6FF;
+    padding-left:5px;
+}
+
+.social-icons{
+    margin-top:20px;
+    display:flex;
+    gap:18px;
+}
+
+.social-icons i{
+    width:42px;
+    height:42px;
+    background:#163A6B;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social-icons i:hover{
+    background:#0D6EFD;
+    transform:translateY(-5px);
+}
+
+.footer hr{
+    border:none;
+    height:1px;
+    background:#284b77;
+    margin:40px 0 20px;
+}
+
+.copyright{
+    text-align:center;
+    color:#b8c7da;
+    font-size:15px;
+}

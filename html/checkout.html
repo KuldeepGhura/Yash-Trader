@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Yash Traders</title>
+
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <!-- Use the same navbar from your Products/Cart page -->
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="checkout-banner">
+
+        <h1>Checkout</h1>
+
+        <div class="heading-line"></div>
+
+        <p>Complete your order securely</p>
+
+    </section>
+
+
+    <!-- ================= MAIN CONTAINER ================= -->
+
+    <section class="checkout-container">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="checkout-left">
+
+            <div class="card">
+
+                <h2>Shipping Address</h2>
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="fullname" placeholder="Enter Full Name">
+                </div>
+
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input type="text" id="phone" placeholder="Enter Phone Number">
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="text" id="email" placeholder="Enter Email Address">
+                </div>
+
+                <div class="input-group">
+                    <label>Address</label>
+                    <input type="text" id="address" placeholder="Enter Address">
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+                        <label>City</label>
+                        <input type="text" id="city" placeholder="Enter City">
+                    </div>
+
+                    <div class="input-group">
+                        <label>State</label>
+                        <input type="text" id="state" placeholder="Enter State">
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+                        <label>PIN Code</label>
+                        <input type="text" id="pincode" placeholder="Enter Pin Code">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Country</label>
+                        <input type="text" value="India">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PAYMENT -->
+
+            <div class="card">
+
+                <h2>Payment Method</h2>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" checked>
+                    <i class="fa-brands fa-google-pay"></i>
+                    UPI
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment">
+                    <i class="fa-regular fa-credit-card"></i>
+                    Credit / Debit Card
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    Cash On Delivery
+                </label>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="checkout-right">
+
+            <div class="summary-card">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">₹0</span>
+                </div>
+                
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span id="delivery">₹40</span>
+                </div>
+                
+                <div class="summary-row">
+                    <span>GST (5%)</span>
+                    <span id="gst">₹0</span>
+                </div>
+                
+                <hr>
+                
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span id="grand-total">₹0</span>
+                </div>
+
+                <button class="place-order" id="place-order">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    Place Order
+
+                </button>
+
+                <p class="secure">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    100% Secure Checkout
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <!-- Use the same footer from previous pages -->
+
+</body>
+
+<script src="checkout.js"></script>
+</html>

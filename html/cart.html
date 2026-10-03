@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <nav class="Navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <div class="sublogo">Yash Traders</div>
+            <p>Stay Hydrated Stay Safe</p>
+        </div>
+        
+        <!-- Navigation -->
+        <div class="nav-center">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+        
+        <!-- Search -->
+        <div class="nav-search">
+            <input type="text" id="search" placeholder="Search for products">
+        </div>
+        
+        <!-- Icons -->
+        <div class="nav-right">
+            
+            <button class="NavButton2">
+                <i class="fa-solid fa-user"></i>
+            </button>
+            
+            <button class="NavButton2">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            
+        </div>
+    </nav>
+    
+    <section class="cart">
+        <div class="cart-heading">
+            <h2>Shopping Cart</h2>
+            <div class="heading-line"></div>
+            <pre>Home  >  Cart</pre>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="left-container">
+            <div class="cart-header">
+                <p>Product</p>
+                <p>Price</p>
+                <p>Quantity</p>
+                <p>Total</p>
+                <p>Action</p>
+            </div>
+            
+            <div id="cart-items"></div>
+
+            <div class="cs">
+                <button><i class="fa-solid fa-arrow-left"></i>Continue Shopping</button>
+            </div>
+        </div>
+
+        <div class="right-container">
+    <h2>Order Summary</h2>
+
+    <div class="charges">
+
+        <div class="sub-total">
+            <p>Subtotal (<span id="item-count">0</span> items)</p>
+            <p id="subtotal">₹0</p>
+        </div>
+
+        <div class="sub-total">
+            <p>Delivery Charges</p>
+            <p id="delivery">₹40</p>
+        </div>
+
+        <div class="sub-total">
+            <p>GST (5%)</p>
+            <p id="gst">₹0</p>
+        </div>
+
+        <hr>
+
+    </div>
+
+    <div class="total">
+        <h3>Total</h3>
+        <p id="grand-total">₹0</p>
+    </div>
+
+    <button class="POD" id="checkout-btn">
+        Proceed To Checkout
+    </button>
+
+    <p class="secure">
+        <i class="fa-solid fa-shield-halved"></i>
+        Secure Checkout
+    </p>
+
+</div>
+        
+        
+    </section>
+</body>
+<script src="cart.js"></script>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <nav class="Navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+        <div class="sublogo">Yash Traders</div>
+        <p>Stay Hydrated Stay Safe</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-center">
+        <a href="Index.html">Home</a>
+        <a class="product_nav">Products</a>
+        <a href="Index.html#about">About Us</a>
+        <a href="Index.html#contact">Contact Us</a>
+    </div>
+
+    <!-- Search -->
+    <div class="nav-search">
+        <input type="text" id="search" placeholder="Search for products">
+    </div>
+
+    <!-- Icons -->
+    <div class="nav-right">
+
+        <button class="NavButton2" onclick="window.location.href='login.html'">
+            <i class="fa-solid fa-user"></i>
+        </button>
+
+        <div class="cart-icon">
+            <button class="NavButton2" onclick="window.location.href='cart.html'">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <span id="cart-count">0</span>
+        </div>
+
+
+    </div>
+</nav>
+
+<main>
+    <div class="cart-heading">
+        <h3>Products</h3>
+        <div class="heading-line"></div>
+        <p>Choose from a wide range of pure & refreshing beverages</p>
+    </div>
+
+</main>
+
+<section>
+    <div class="bar">
+        <div class="search-bar">
+            <input type="text" id="search2" placeholder="Search The product">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    
+        <select class="categorie">
+            <option>All Categories</option>
+            <option>Water</option>
+            <option>Soft Drink</option>
+            <option>Energy Drink</option>
+            <option>Juice</option>
+        </select>
+    </div>
+</section>
+
+<section class="products">
+    <div class="product_display">
+
+        <!-- Water Jar 20L -->
+        <div class="product_card" data-id="1" data-name="Water Jar 20L" data-price="160" data-image="20L.jpeg" data-category="Water" data-rating="4.9">
+            <div class="box L20"></div>
+
+            <h3>Water Jar</h3>
+
+            <div class="details">
+                <p>20L</p>
+                <p>₹160</p>
+            </div>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+                <span>(4.9)</span>
+            </div>
+
+            <button class="ATC">Add To Cart</button>
+        </div>
+
+        <!-- Water Jar 10L -->
+        <div class="product_card" data-id="2" data-name="Water Jar 10L" data-price="80" data-image="10L.jpeg" data-category="Water" data-rating="4.8">
+            <div class="box L10"></div>
+
+            <h3>Water Jar</h3>
+
+            <div class="details">
+                <p>10L</p>
+                <p>₹80</p>
+            </div>
+
+            <div class="rating">
+                ⭐⭐⭐⭐☆
+                <span>(4.8)</span>
+            </div>
+
+            <button class="ATC">Add To Cart</button>
+        </div>
+
+        <!-- Coca-Cola -->
+        <div class="product_card" data-id="3" data-name="Coca-Cola 2L" data-price="84" data-image="Coke.jpeg" data-category="Soft Drink" data-rating="4.4">
+            <div class="box coke"></div>
+
+            <h3>Coca-Cola</h3>
+
+            <div class="details">
+                <p>2L</p>
+                <p>₹84</p>
+            </div>
+
+            <div class="rating">
+                ⭐⭐⭐⭐☆
+                <span>(4.4)</span>
+            </div>
+
+            <button class="ATC">Add To Cart</button>
+        </div>
+
+        <!-- Sprite -->
+        <div class="product_card" data-id="4" data-name="Sprite 2L" data-price="84" data-image="sprite.jpeg" data-category="Soft Drink" data-rating="4.9">
+            <div class="box sprite"></div>
+
+            <h3>Sprite</h3>
+
+            <div class="details">
+                <p>2L</p>
+                <p>₹84</p>
+            </div>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+                <span>(4.9)</span>
+            </div>
+
+            <button class="ATC">Add To Cart</button>
+        </div>
+
+        <!-- Fanta -->
+        <div class="product_card" data-id="5" data-name="Fanta 2L" data-price="88" data-image="Fanta.webp" data-category="Soft Drink" data-rating="4.4">
+            <div class="box fanta"></div>
+
+            <h3>Fanta</h3>
+
+            <div class="details">
+                <p>2L</p>
+                <p>₹88</p>
+            </div>
+
+            <div class="rating">
+                ⭐⭐⭐⭐☆
+                <span>(4.4)</span>
+            </div>
+
+            <button class="ATC">Add To Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="product_display">
+
+        <!-- Sting -->
+        <div class="product_card" data-id="6" data-name="Sting 250mL" data-price="20" data-image="sting.jpeg" data-category="Energy Drink" data-rating="5.0">
+            <div class="box sting"></div>
+
+            <h3>Sting</h3>
+
+            <div class="details">
+                <p>250mL</p>
+                <p>₹20</p>
+            </div>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+                <span>(5.0)</span>
+            </div>
+
+            <button class="ATC">Add To Cart</button>
+        </div>
+
+        <!-- Slice -->
+        <div class="product_card" data-id="7" data-name="Slice 1.2L" data-price="65" data-image="slice.webp" data-category="Juice" data-rating="4.2">
+            <div class="box slice"></div>
+
+            <h3>Slice</h3>
+
+            <div class="details">
+                <p>1.2L</p>
+                <p>₹65</p>
+            </div>
+
+            <div class="rating">
+                ⭐⭐⭐⭐☆
+                <span>(4.2)</span>
+            </div>
+
+            <button class="ATC">Add To Cart</button>
+        </div>
+
+        <!-- Maaza -->
+        <div class="product_card" data-id="8" data-name="Maaza 1.2L" data-price="70" data-image="maaza.webp" data-category="Juice" data-rating="4.4">
+            <div class="box maaza"></div>
+
+            <h3>Maaza</h3>
+
+            <div class="details">
+                <p>1.2L</p>
+                <p>₹70</p>
+            </div>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+                <span>(4.4)</span>
+            </div>
+
+            <button class="ATC">Add To Cart</button>
+        </div>
+
+        <!-- Pepsi -->
+        <div class="product_card" data-id="9" data-name="Pepsi 1.25L" data-price="50" data-image="pepsi.jpeg" data-category="Soft Drink" data-rating="3.6">
+            <div class="box pepsi"></div>
+
+            <h3>Pepsi</h3>
+
+            <div class="details">
+                <p>1.25L</p>
+                <p>₹50</p>
+            </div>
+
+            <div class="rating">
+                ⭐⭐⭐☆☆
+                <span>(3.6)</span>
+            </div>
+
+            <button class="ATC">Add To Cart</button>
+        </div>
+
+        <!-- Appy Fizz -->
+        <div class="product_card" data-id="10" data-name="Appy Fizz 1L" data-price="60" data-image="Appy.jpg" data-category="Juice" data-rating="5.0">
+            <div class="box appy"></div>
+
+            <h3>Appy Fizz</h3>
+
+            <div class="details">
+                <p>1L</p>
+                <p>₹60</p>
+            </div>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+                <span>(5.0)</span>
+            </div>
+
+            <button class="ATC">Add To Cart</button>
+        </div>
+
+    </div>
+</section>
+</body>
+<script src="script.js"></script>
+</html>
